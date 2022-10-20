@@ -12,12 +12,16 @@
 
   </head>
   <body>
-    <h1>Hello, Vue!</h1>
-
     <div id="app">
-      <button @click="count++">{{ count }}</button>    
+        <div id="navbar">
+          <ul class="nav">
+            <li><a href="#link">Home</a></li>
+            <li style="float:right"><a class = "active" href="#link">About</a></li>
+            <li><a href="#link">Youtube</a></li>
+            <li><a href="#link">Coding</a></li>
+          </ul>
+        </div>
     </div>
-    
     <script type="module" src="app.js"></script>
 
   </body>

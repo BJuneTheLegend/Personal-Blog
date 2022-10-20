@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+:root{
+    --red: rgb(244, 91, 105);
+    --blue: rgb(51, 65, 149);
+    --green: rgb(3, 206, 164);
+    --yellow: rgb(255, 217, 114);
+    --orange: rgb(255, 120, 90);
+
+    --veryDarkGray: rgb(23, 23, 23);
+    --mediumDarkGray: rgb(36, 36, 36);
+    --lightGray: rgb(61, 61, 61);
+
+}
+
+/*tutorial at https://www.w3schools.com/css/css_navbar_horizontal.asp*/
 body {
-    background-color: slategrey;
+    background-color: var(--veryDarkGray);
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--mediumDarkGray);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+li a:hover{
+    background-color: var(--orange);
+    color: var(--mediumDarkGray);
+}
+
+.active {
+    background-color: var(--red);
+    color: var(--mediumDarkGray);
 }
